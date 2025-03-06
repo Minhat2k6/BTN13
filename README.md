@@ -113,7 +113,5 @@ Khong co buoc di nao thoa man.
 ---
 
 ## 5. Link video báo cáo
-https://drive.google.com/file/d/1rhOc-X5N-KTTrakAhcUvXiuwL_mubOVT/view?usp=sharing
-BTL_13 - PowerPoint 2025-03-06 16-42-41.mp4
-
+https://drive.google.com/file/d/1-wukQUCJpyDfn0O8IEUJDlvqc36Ayyte/view?usp=sharing
 ---
