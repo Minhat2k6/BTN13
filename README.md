@@ -21,8 +21,8 @@
 Đề bài: Trên bài cờ NxN, con mã điểm (x,y). Tìm đường đi qua mọi ô đúng 1 lần
 Phân tích đề bài:
  #### Input: 
-    + n -  kích cỡ của bàn cờ
-	  + x, y: vị trí ban đầu của quân mã
++ n -  kích cỡ của bàn cờ
++ x, y: vị trí ban đầu của quân mã
  #### Output: 
 + Các bước di chuyển của quân mã trên bàn cơ (Nếu thỏa mãn) hoặc không tồn tại cách di chuyển nào.
   Sử dụng đệ quy để thử từng nước đi.
@@ -117,6 +117,7 @@ https://drive.google.com/file/d/1-wukQUCJpyDfn0O8IEUJDlvqc36Ayyte/view?usp=shari
 + Đệ quy giúp diễn đạt thuật toán tìm đường một cách trực quan, dễ theo dõi hơn so với cách triển khai vòng lặp.
 + Chương trình tuân theo tư duy "thử và quay lui" (backtracking) một cách tự nhiên.
 + Dễ triển khai kỹ thuật "quay lui" (backtracking), khi một nước đi không khả thi, ta chỉ cần quay lui bằng cách giảm biến dem và đặt lại banco[x][y] = -1.Điều này giúp dễ dàng tìm kiếm các lời giải mà không cần cấu trúc dữ liệu phức tạp.
+
 **Nhược Điểm**
 + Dễ gây lỗi "tràn stack" khi n lớn, mỗi lần gọi hàm đệ quy, một khung stack mới được tạo, chiếm bộ nhớ.
 + Nếu bàn cờ lớn (ví dụ n>8) hoặc có nhiều nhánh phải thử, số lần gọi hàm tăng nhanh dẫn đến tràn ngăn xếp (stack overflow).
