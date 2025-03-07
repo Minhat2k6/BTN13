@@ -60,11 +60,11 @@ n=5 và giá trị khởi đầu của mã là x=2;y=2.
 
 **Output:**
 *** Cac buoc di la:
-+ 23 10 15 4 25
-+ 16 5 24 9 14
-+ 11 22 1 18 3
-+ 6 17 20 13 8
-+ 21 12 7 2 19 
++ 25 14 3 8 19
++ 4 9 18 13 2
++ 15 24 1 20 7
++ 10 5 22 17 12
++ 23 16 11 6 21 
 
   
 **Giải thích:**  
@@ -88,17 +88,15 @@ n=8 và giá trị khởi đầu của mã là x=1;y=2.
 
 **Output:**  
 ***Cac buoc di la:
-+ 1 60 39 34 31 18 9 64
-+ 38 35 32 61 10 63 30 17
-+ 59 2 37 40 33 28 19 8
-+ 36 49 42 27 62 11 16 29
-+ 43 58 3 50 41 24 7 20
-+ 48 51 46 55 26 21 12 15
-+ 57 44 53 4 23 14 25 6
-+ 52 47 56 45 54 5 22 13
++ 64 9 22 29 2 7 20 5
++ 23 30 1 8 21 4 17 14
++ 10 63 28 3 16 13 6 19
++ 31 24 43 12 27 18 15 52
++ 62 11 26 35 42 51 56 47
++ 25 32 39 44 59 48 53 50
++ 38 61 34 41 36 55 46 57
++ 33 40 37 60 45 58 49 54
 
-**Giải thích:**  
-(Mô tả cách giải)
 
 ### Ví dụ 3
 **Input:**  
@@ -107,11 +105,19 @@ n=5 và giá trị khởi đầu của mã là x=0;y=1.
 **Output:**  
 Khong co buoc di nao thoa man.
 
-**Giải thích:**  
-(Mô tả cách giải)
 
 ---
 
 ## 5. Link video báo cáo
 https://drive.google.com/file/d/1-wukQUCJpyDfn0O8IEUJDlvqc36Ayyte/view?usp=sharing
 ---
+## 6. Ưu nhược điểm: 
+**Ưu Điểm**
++ Mã nguồn ngắn gọn, dễ hiểu.
++ Đệ quy giúp diễn đạt thuật toán tìm đường một cách trực quan, dễ theo dõi hơn so với cách triển khai vòng lặp.
++ Chương trình tuân theo tư duy "thử và quay lui" (backtracking) một cách tự nhiên.
++ Dễ triển khai kỹ thuật "quay lui" (backtracking), khi một nước đi không khả thi, ta chỉ cần quay lui bằng cách giảm biến dem và đặt lại banco[x][y] = -1.Điều này giúp dễ dàng tìm kiếm các lời giải mà không cần cấu trúc dữ liệu phức tạp.
+**Nhược Điểm**
++ Dễ gây lỗi "tràn stack" khi n lớn, mỗi lần gọi hàm đệ quy, một khung stack mới được tạo, chiếm bộ nhớ.
++ Nếu bàn cờ lớn (ví dụ n>8) hoặc có nhiều nhánh phải thử, số lần gọi hàm tăng nhanh dẫn đến tràn ngăn xếp (stack overflow).
++ Không tối ưu về hiệu suất, đệ quy truyền thống duyệt qua tất cả các nước đi mà không có chiến lược ưu tiên.
